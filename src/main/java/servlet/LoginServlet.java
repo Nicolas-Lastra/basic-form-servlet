@@ -19,8 +19,7 @@ public class LoginServlet extends HttpServlet {
         if(usuario.equals("Nombre") && contrasena.equals("12345")) {
             resp.sendRedirect("bienvenida.jsp");
         } else {
-            resp.sendRedirect("index.jsp?error=1")
-            ;
+            resp.sendRedirect("index.jsp?error=1");
         }
     }
 }
